@@ -2,12 +2,23 @@
 <p>Welcome Ironhacker!</p>
 
 <p>
-    <a href="/authors">Authors</a> |
-    <a href="/books">Books</a> |
-    <a href="/books/create">Create new book</a>
+  <a href="/authors">Authors</a>
+  |
+  <a href="/books">Books</a>
+  |
+  <a href="/books/create">Create new book</a>
 </p>
 
 <p>
-    <a href="/signup">Register</a> |
-    <a href="/login">Login</a> 
+  <a href="/signup">Register</a>
+  |
+  <a href="/login">Login</a>
+  |
+  <a href="/user-profile">User Profile</a>
+  <br />
+  {{!-- {{#if}} --}}
+  <form id="logout-form" action="/logout" method="POST">
+    <button>Logout</button>
+  </form>
+  {{!-- {{/if}} --}}
 </p>

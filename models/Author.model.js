@@ -1,14 +1,14 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 const authorSchema = new Schema(
   {
     name: String,
     age: Number,
-    country: String
+    country: String,
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
-module.exports = model('Author', authorSchema);
+module.exports = model("Author", authorSchema);

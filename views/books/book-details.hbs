@@ -1,24 +1,30 @@
 <section class="book-details">
-    <h2>{{title}}</h2>
-    <p>
-        <strong>Author:</strong> <br />
-        {{author.name}} <br />
-        {{author.age}} <br />
-        {{author.country}} <br />
-    </p>
-    <p>
-        <strong>Rating: </strong> {{rating}} <br />
-    </p>
-    <p>
-        <strong>Description:</strong>
-        {{description}}
-    </p>
+  <h2>{{title}}</h2>
+  <p>
+    <strong>Author:</strong>
+    <br />
+    {{author.name}}
+    <br />
+    {{author.age}}
+    <br />
+    {{author.country}}
+    <br />
+  </p>
+  <p>
+    <strong>Rating: </strong>
+    {{rating}}
+    <br />
+  </p>
+  <p>
+    <strong>Description:</strong>
+    {{description}}
+  </p>
 
-    <p>
-        <form action="/books/{{_id}}/delete" method="POST">
-            <button>Delete</button>
-        </form>
-    </p>
+  <p>
+    <form action="/books/{{_id}}/delete" method="POST">
+      <button>Delete</button>
+    </form>
+  </p>
 </section>
 
 <a href="/books">Back</a>
