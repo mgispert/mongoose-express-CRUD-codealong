@@ -16,9 +16,12 @@
   |
   <a href="/user-profile">User Profile</a>
   <br />
-  {{!-- {{#if}} --}}
-  <form id="logout-form" action="/logout" method="POST">
-    <button>Logout</button>
-  </form>
-  {{!-- {{/if}} --}}
+  {{#if userInSession}}
+    <form id="logout-form" action="/logout" method="POST">
+      <button>Logout</button>
+    </form>
+  {{else}}
+    <p>user is not logged in</p>
+  {{/if}}
+
 </p>
