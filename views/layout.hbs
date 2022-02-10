@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <header id="header">
+      <h1>Welcome to our library!</h1>
+      {{#if session.currentUser}}
+        <form id="logout-form" action="/logout" method="POST">
+          <button>Logout</button>
+        </form>
+      {{else}}
+        <form id="login-form" action="/login" method="POST">
+          <button>Log in</button>
+        </form>
+      {{/if}}
+    </header>
 
     {{{body}}}
 
